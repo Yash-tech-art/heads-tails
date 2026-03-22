@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heads and tails</title>
+
+    <style>
+        body{
+            font-size: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+            background-color: rgb(73, 73, 73);
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>try your luck!</h1>
+    <script>
+        let random = Math.random();
+
+      let result;
+        
+        if(random < 0.5){
+           result = 'heads';
+        }
+
+        else{
+            result = 'tails';
+        }
+
+        let guess = prompt('enter your toss');
+
+        (guess === result) ? document.body.innerHTML ='you win' : document.body.innerHTML ='you lose';
+    </script>
+</body>
+</html>
